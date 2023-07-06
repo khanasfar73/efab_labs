@@ -1,10 +1,9 @@
 `timescale 1ns / 1ps
-module MIPS16
-    (
-        input clk,
-        input reset,
-        output [15:0] pc_out, alu_result
-    );
+module MIPS16 (
+    input clk,
+    input reset,
+    output [15:0] pc_out, alu_result
+);
     reg [15:0] pc_current;
     wire signed [15:0] pc_next, pc2;
     wire [15:0] instr;
