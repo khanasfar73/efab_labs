@@ -1,10 +1,12 @@
 {
     "DESIGN_NAME": "MIPS16",
     "VERILOG_FILES": "dir::src/MIPS16.v",
-    "CLOCK_PERIOD": 10,
+    "CLOCK_PERIOD": 11,
     "CLOCK_PORT": "clk",
     "CLOCK_NET": "clk",
+    "GLB_RESIZER_TIMING_OPTIMIZATION": true,
     "FP_CORE_UTIL": 45,
-    "DIODE_INSERTION_STRATEGY": 4,
+    "GRT_REPAIR_ANTENNAS": true,
+    "RUN_HEURISTICS_DIODE_INSERTIONS": 1,
     "FP_PIN_ORDER_CFG": "dir::pin_order.cfg"
 }
