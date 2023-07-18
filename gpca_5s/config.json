@@ -1,0 +1,16 @@
+{
+    "DESIGN_NAME": "gpca",
+    "VERILOG_FILES": "dir::src/gpca.v",
+    "RUN_CTS": false,
+    "CLOCK_PORT": null,
+    "CLOCK_PERIOD": 25,
+    "PL_RANDOM_GLB_PLACEMENT": true,
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 150 150",
+    "PL_TARGET_DENSITY": 0.75,
+    "FP_PDN_AUTO_ADJUST": false,
+    "FP_PDN_VPITCH": 25,
+    "FP_PDN_HPITCH": 25,
+    "FP_PDN_VOFFSET": 5,
+    "FP_PDN_HOFFSET": 5
+}
