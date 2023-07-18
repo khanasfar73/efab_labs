@@ -14,6 +14,9 @@ module smpl_circuit_tb();
     A = 1; B = 1; C = 0;#25
     A = 1; B = 1; C = 1;
     end
-    initial
+    initial begin
+        $dumpfile(smpl.vcd”);
+        $dumpvars(0, smpl_circuit_tb);
         #200 $finish;
+    end
 endmodule
