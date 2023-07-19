@@ -30,7 +30,7 @@ module MIPS16_tb();
         #100;
         reset = 0;
         // Add stimulus here
-        $dumpfile(“MIPS16.vcd”);
+        $dumpfile("MIPS16.vcd");
         $dumpvars(0, MIPS16_tb);
         #5000; $finish;
 
