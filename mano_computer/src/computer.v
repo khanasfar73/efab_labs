@@ -6,7 +6,7 @@ module computer(
     reg [7:0] mem[0:8], MAR, MBR, IR, A, R, PC;
     reg [2:0] T;
 
-    wire q1, q2, q3,t0, t1, t2, t3, t4, t5, t6, t7, x1, x2, x3, x4, x5, x6, x7, x8;
+    wire t5, t6, t7, x8;
     reg reset;
 
     OpDecoder opl(IR0, IR1, q1, q2, q3);
@@ -80,9 +80,8 @@ endmodule
 //----------------------------------------------------------------------
 //----------------------------------------------------------------------
 module TimeDecoder(t, t0, t1, t2, t3, t4, t5, t6, t7);
-    input t;
     output t0, t1, t2, t3, t4, t5, t6, t7;
-    wire [2:0] t;
+    input wire [2:0] t;
     assign
         t0 = ~t[2] & ~t[1] & ~t[0],
         t1 = ~t[2] & ~t[1] & t[0],
