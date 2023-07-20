@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module computer(
         input IR0, IR1, clock,
         output t0, t1, t2, t3, t4, x1, x2, x3, x4, x5, x6, x7, q1, q2, q3

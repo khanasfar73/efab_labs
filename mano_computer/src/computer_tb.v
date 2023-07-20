@@ -2,11 +2,15 @@
 
 module computer_tb();
     // INPUTS
-    reg IR0, IR1;
-    computer c1(.IR0(IR0), .IR1(IR1));
+    reg IR0, IR1, clock;
+    computer c1(.IR0(IR0), .IR1(IR1), .clock(clock));
+
+    always #10 clock = ~clock;
 
     initial
     begin
+        clock = 0;
+
         #50;
         c1.R = 99;
         c1.mem[0] = 8'b00000001;
@@ -26,11 +30,10 @@ module computer_tb();
         IR0 = 1'b0;
         #3000 IR1 = 1'b1;
         IR0 = 1'b1;
-        #3600 $stop;
 
         $dumpfile("mano.vcd");
         $dumpvars(0, computer_tb);
-        $finish;
+        #3600 $finish;
     end
 
 endmodule
