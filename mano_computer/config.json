@@ -1,0 +1,14 @@
+{
+    "DESIGN_NAME": "computer",
+    "VERILOG_FILES": "dir::src/computer.v",
+    "CLOCK_PERIOD": 10,
+    "CLOCK_PORT": "clock",
+    "CLOCK_NET": "clock",
+    "GLB_RESIZER_TIMING_OPTIMIZATION": true,
+    "GRT_REPAIR_ANTENNAS": true,
+    "RUN_HEURISTICS_DIODE_INSERTIONS": 1,
+    "FP_PDN_VOFFSET": 7,
+    "FP_PDN_HOFFSET": 7,
+    "FP_PDN_SKIPTRIM": true,
+    "FP_CORE_UTIL": 65
+}
