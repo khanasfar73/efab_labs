@@ -2,15 +2,11 @@
 
 module Top();
     // INPUTS
-    reg IR0, IR1, clock;
-    computer c1(.IR0(IR0), .IR1(IR1), .clock(clock));
-
-    always #10 clock = ~clock;
+    reg IR0, IR1;
+    computer c1(.IR0(IR0), .IR1(IR1));
 
     initial
     begin
-        clock = 0;
-
         #50;
         c1.R = 99;
         c1.mem[0] = 8'b00000001;
@@ -30,10 +26,6 @@ module Top();
         IR0 = 1'b0;
         #3000 IR1 = 1'b1;
         IR0 = 1'b1;
-
-        $dumpfile("mano.vcd");
-        $dumpvars(0, Top);
         #3600 $finish;
     end
-
 endmodule
