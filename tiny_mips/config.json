@@ -1,0 +1,11 @@
+{
+    "DESIGN_NAME": "mips",
+    "VERILOG_FILES": "dir::src/mips.v",
+    "CLOCK_PERIOD": 10,
+    "CLOCK_PORT": "clk",
+    "CLOCK_NET": "clk",
+    "GLB_RESIZER_TIMING_OPTIMIZATION": true,
+    "FP_CORE_UTIL": 45,
+    "GRT_REPAIR_ANTENNAS": true,
+    "RUN_HEURISTICS_DIODE_INSERTIONS": 1
+}
