@@ -1,3 +1,5 @@
+// https://my.eng.utah.edu/~cs3710/
+
 module mips_tb #(parameter WIDTH = 8, REGBITS = 3)();
     reg clk = 0;
     reg reset = 1;
