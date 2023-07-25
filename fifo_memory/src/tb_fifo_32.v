@@ -21,6 +21,8 @@ module tb_fifo_32();
 
     initial
     begin
+        $dumpfile("waveform.vcd");
+        $dumpvars(0, tb_fifo_32);
         clk     = 1'b0;
         rst_n     = 1'b0;
         wr     = 1'b0;

@@ -15,7 +15,7 @@ module mips_tb #(parameter WIDTH = 8, REGBITS = 3)();
         #3000 $finish;
     end
 
-    always #5 clk <= -clk;
+    always #5 clk <= ~clk;
 
     always@(negedge clk)
     begin
