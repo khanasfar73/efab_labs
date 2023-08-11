@@ -3024,7 +3024,7 @@ module system (
 	);
 
 	reg [31:0] memory [0:MEM_SIZE-1];
-	initial $readmemh("firmware.hex", memory);
+	// initial $readmemh("firmware.hex", memory);
 
 	reg [31:0] m_read_data;
 	reg m_read_en;
