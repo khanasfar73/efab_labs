@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module smpl_circuit_tb();
     reg A, B, C;
     wire x, y;
