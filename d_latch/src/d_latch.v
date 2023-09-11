@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module d_latch(q,d,e); 
   input d,e;
   output q;
