@@ -1,8 +1,8 @@
 {
     "DESIGN_NAME": "d_ff",
     "VERILOG_FILES": "dir::src/d_ff.v",
-    "RUN_CTS": false,
-    "CLOCK_PORT": null,
+    "RUN_CTS": true,
+    "CLOCK_PORT": "clk",
     "PL_RANDOM_GLB_PLACEMENT": true,
     "FP_SIZING": "absolute",
     "DIE_AREA": "0 0 34.5 57.12",
