@@ -6,12 +6,9 @@ module d_ff_tb();
     d_ff UUT(q, clk, n_rst, din);
     assign d1   = din;
     assign clk1 = clk;
-    initial
-        clk = 1'b0;
-        always
-        #10 clk = ~clk;
-        initial
-        begin
+    initial clk = 1'b0;
+        always #10 clk = ~clk;
+        initial begin
             din       = 1'b0;
             n_rst     = 1'b1;
             #20 n_rst = 1'b0;
@@ -20,7 +17,12 @@ module d_ff_tb();
             #18 din   = 1'b0;
             #1 din    = 1'b1;
             #20 din   = 1'b0;
-            #10;
+            #10 $stop;
         end
+
+    initial begin
+        $dumpfile("waveform.vcd");
+        $dumpvars(0, d_ff_tb);
+    end
 endmodule
     
