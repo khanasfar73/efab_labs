@@ -1,4 +1,4 @@
-module D_latch(q,d,e); 
+module d_latch(q,d,e); 
   input d,e;
   output q;
   reg q;
