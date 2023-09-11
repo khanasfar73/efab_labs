@@ -17,7 +17,7 @@ module d_ff_tb();
             #18 din   = 1'b0;
             #1 din    = 1'b1;
             #20 din   = 1'b0;
-            #10 $stop;
+            #10 $finish;
         end
 
     initial begin
