@@ -1,3 +1,5 @@
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets e]
+
 ## Switches
 set_property -dict { PACKAGE_PIN V17   IOSTANDARD LVCMOS33 } [get_ports {e}]
 set_property -dict { PACKAGE_PIN V16   IOSTANDARD LVCMOS33 } [get_ports {d}]
