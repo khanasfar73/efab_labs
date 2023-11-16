@@ -40,12 +40,11 @@ module gpca_tb();
        
         // Division 35/5; A = 35 (left justified), B = C = 5, P = 0
         X = 1; P = 5'b00000; A = 10'b1100_0100_00; B = 7'b1010_000; C = 7'b1010_000;
-
+        #200 $finish;
+    end
+    
+    initial begin
         $dumpfile("gpca.vcd");
-        $dumpvars(0, gpca_tb);
-
-        #200; $finish;
-
-       
+        $dumpvars(0, gpca_tb);      
     end
 endmodule
