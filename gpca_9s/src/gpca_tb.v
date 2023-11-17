@@ -59,4 +59,9 @@ module gpca_tb();
         #200;
         $finish;
     end
+
+    initial begin
+        $dumpfile("waveform.vcd");
+        $dumpvars(0, gpca_tb);
+    end
 endmodule
